@@ -8,7 +8,8 @@ const cors = require('cors');
 // Cria uma instância do aplicativo Express
 const app = express();
 // Define a porta em que o servidor irá rodar
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+
 
 
 // Aplica o middleware CORS para todas as rotas
