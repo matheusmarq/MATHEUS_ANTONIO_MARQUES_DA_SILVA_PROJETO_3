@@ -1,0 +1,127 @@
+
+<!-- Documento HTML principal do sistema de agendamento -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" /> <!-- Define a codificação de caracteres -->
+  <title>Sistema de Agendamento</title> <!-- Título da página -->
+  <link rel="stylesheet" href="style.css" /> <!-- Importa o CSS -->
+</head>
+<body>
+  <img src="PulseCare_Logo.png" alt="Logo PulseCare" />
+
+  <!-- Seção de descrição dos serviços -->
+  <section id="servicos">
+    <h2>Nossos Serviços</h2>
+    <p>Oferecemos uma ampla gama de serviços médicos especializados para cuidar da sua saúde.</p>
+    <h3>Consultas Especializadas</h3>
+    <img src="./joao_atendendo.png" alt="Consulta médica" />
+    <p>Realizamos consultas em cardiologia, ortopedia e pediatria com profissionais qualificados.</p>
+    <h3>Exames e Diagnósticos</h3>
+    <img src="./PulseCare_frente.png" alt="Exames médicos" />
+    <p>Disponibilizamos exames laboratoriais e de imagem para um diagnóstico preciso.</p>
+  </section>
+
+  <!-- Seção da equipe -->
+  <section id="equipe">
+    <h2>Nossa Equipe</h2>
+    <div class="membros">
+      <div class="membro">
+        <img src="./João Yamada.png" alt="Dr. João Yamada" />
+        <h3>Dr. João Yamada</h3>
+        <p>Ortopedista</p>
+      </div>
+      <div class="membro">
+        <img src="./Maria Santos.png" alt="Dra. Maria Santos" />
+        <h3>Dra. Maria Santos</h3>
+        <p>Pediatra</p>
+      </div>
+      <div class="membro">
+        <img src="./Carlos Oliveira.png" alt="Dr. Carlos Oliveira" />
+        <h3>Dr. Carlos Oliveira</h3>
+        <p>Cardiologista</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="agendamento">
+    <h1>Agende ou busque sua Consulta</h1>
+    <p>Escolha a especialidade, o profissional, a data e o horário para agendar sua consulta.</p> 
+  
+
+  <!-- Seção do formulário para novo agendamento -->
+  <section id="form-agendamento">
+    <h2>Novo agendamento</h2>
+
+    <!-- Seleção da especialidade médica -->
+    <label>Especialidade:
+      <select id="especialidade"></select>
+    </label>
+
+    <!-- Seleção do profissional -->
+    <label>Profissional:
+      <select id="profissional"></select>
+    </label>
+
+    <!-- Seleção da data do agendamento -->
+    <label>Data:
+      <input type="date" id="data" />
+    </label>
+
+    <!-- Seleção do horário disponível -->
+    <label>Horário:
+      <select id="hora"></select>
+    </label>
+
+    <!-- Campo para nome do paciente -->
+    <label>Nome:
+      <input type="text" id="nome" />
+    </label>
+
+    <!-- Campo para CPF do paciente -->
+    <label>CPF:
+      <input type="text" id="cpf" />
+    </label>
+
+    <!-- Botão para enviar o agendamento -->
+    <button id="btn-agendar">Agendar</button>
+  </section>
+
+  <!-- Seção para consultar ou cancelar agendamentos pelo CPF -->
+  <section id="consulta-cpf">
+    <h2>Consultar/Cancelar por CPF</h2>
+    <!-- Campo para digitar o CPF a ser consultado -->
+    <input type="text" id="cpf-busca" placeholder="Digite o CPF" />
+    <!-- Botão para buscar agendamentos -->
+    <button id="btn-buscar">Buscar</button>
+
+    <!-- Div onde os resultados dos agendamentos serão exibidos -->
+    <div id="resultado-agendamentos"></div>
+  </section>
+  
+  </section>
+
+  <!-- Seção de contato -->
+  <section id="contato">
+    <h2>Entre em Contato</h2>
+    <form id="form-contato">
+      <label>Nome:
+        <input type="text" id="contato-nome" name="nome" required />
+      </label>
+      <label>E-mail:
+        <input type="email" id="contato-email" name="email" required />
+      </label>
+      <label>Cidade:
+        <input type="text" id="contato-cidade" name="cidade" required />
+      </label>
+      <label>Estado:
+        <input type="text" id="contato-estado" name="estado" required />
+      </label>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Importa o script JavaScript principal -->
+  <script src="app.js"></script>
+</body>
+</html>
