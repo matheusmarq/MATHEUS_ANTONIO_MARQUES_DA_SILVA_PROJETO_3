@@ -1,6 +1,7 @@
 
 // URL base da API backend
-const API_URL = 'http://localhost:3000';
+const API_URL = 'https://matheus-antonio-marques-da-silva-projeto.onrender.com';
+
 
 
 // Carrega as especialidades médicas do backend e preenche o select
