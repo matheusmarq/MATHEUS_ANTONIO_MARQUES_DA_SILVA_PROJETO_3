@@ -2,6 +2,9 @@
 
 Sistema de gerenciamento de agendamentos e contatos com backend Node.js e frontend simples.
 
+
+- A solução já esta online, então os passos abaixo não se fazem necessarios, apenas precisa rodar o index.html -
+
 ## Pré-requisitos
 
 - Node.js instalado (versão 14 ou superior)
